@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76586418-3"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date()); 
-            gtag('config', 'UA-76586418-3');
-            gtag('set', {'user_id': '76586418'});
-        </script>
+  <title>Nature map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
 
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Hey" />
-        <meta name="author" content="desireyavro" />
-        <title>Africa 🚀📡 New Space ventures</title>
+  <!-- Position the map with Cascading Style Sheet (CSS)-->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
     
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
@@ -39,26 +27,18 @@
 
   <!-- PWA setup - update public/sw.js if you add your own assets like a new .css file -->
   <link rel="manifest" href="manifest.json" />
-</head>    
         
+   
+    
+</head>
     
   <body>
       
     <div class="sidebar">
       <div class="heading">
-        <h1 style="text-align: center">Africa Space</h1>
+        <h1 style="text-align: center">Nature map</h1>
       </div>
-      <div id="listings" class="listings">
-        
-          
-  
-      
-      
-      <iframe src="https://resilient-sfogliatella-9c85f9.netlify.app/" width="100%" height="600" title="family-friendly venue"></iframe>
-
-
-          
-        </div>
+      <div id="listings" class="listings"></div>
     </div>
     
       <!-- HTML element for the map -->

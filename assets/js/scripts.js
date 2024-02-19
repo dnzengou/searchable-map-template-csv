@@ -1,84 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-        
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76586418-3"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date()); 
-            gtag('config', 'UA-76586418-3');
-            gtag('set', {'user_id': '76586418'});
-        </script>
 
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Hey" />
-        <meta name="author" content="desireyavro" />
-        <title>Africa 🚀📡 New Space ventures</title>
-    
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
-    <!-- Leaflet JavaScript -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-    <!-- Leaflet Control Geocoder CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-
-    <!-- Leaflet Control Geocoder JavaScript -->
-    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-
-    <!-- Nominatim Geocoding Service -->
-    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-    
-
-  <!-- PWA setup - update public/sw.js if you add your own assets like a new .css file -->
-  <link rel="manifest" href="manifest.json" />
-</head>    
-        
-    
-  <body>
-      
-    <div class="sidebar">
-      <div class="heading">
-        <h1 style="text-align: center">Africa Space</h1>
-      </div>
-      <div id="listings" class="listings">
-        
-          
-  
-      
-      
-      <iframe src="https://resilient-sfogliatella-9c85f9.netlify.app/" width="100%" height="600" title="family-friendly venue"></iframe>
-
-
-          
-        </div>
-    </div>
-    
-      <!-- HTML element for the map -->
-    <div id="mapId"></div>
-    
-    
-    
-    <!-- HTML element for the map
-    <div id="map"></div>-->
-
-    <!-- HTML input element for the search box -->
-    <input type="text" id="search-address" />
-
-  <!-- Insert Javascript (.js) code to create the map
-  <script src="./assets/js/script.js"></script>-->
-
-      
-      
-    
-    <script>
 // --------------------------------------------------
 
 // MAP PART
@@ -126,7 +46,7 @@
   // see more basemap options at https://leaflet-extras.github.io/leaflet-providers/preview/
 
   // Read markers data from data.csv
-  /*$.get('./data/timberData.csv', function(csvString) {
+  $.get('../../data/timberData.csv', function(csvString) {
 
     // Use PapaParse to convert string to array of objects
     var data = Papa.parse(csvString, {header: true, dynamicTyping: true}).data;
@@ -140,7 +60,7 @@
         opacity: 1,
         // Customized icon
         icon: L.icon({
-          iconUrl: './assets/img/timber-marker.png',
+          iconUrl: '../../img/timber-marker.png',
           iconSize: [20, 20], // size of the icon
         })
       }).bindPopup("<dl><dt> <b>" + row.Name + "</b></dt> <dd>Incorporation: " + row.Incorporation + "</dd> Industry: " + row.Industry);
@@ -148,7 +68,7 @@
       marker.addTo(map);
     }
 
-  });*/
+  });
 
   //map.attributionControl.setPrefix(
   //  'View <a href="https://github.com/HandsOnDataViz/leaflet-map-csv" target="_blank">code on GitHub</a>'
@@ -203,12 +123,4 @@
     alert(e.message);
   }
   map.on('locationerror', onLocationError);
-
-        
-    </script>
-      
-  </body>
-</html>
-
-
 
